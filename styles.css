@@ -21,6 +21,12 @@
 .clients>p{font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;margin:0 0 28px}
 .clients>div{display:flex;flex-wrap:wrap;gap:12px}
 .clients span{border:1px solid var(--line);padding:11px 15px;font-family:Georgia,"Times New Roman",serif;font-size:15px;background:#f7f5ef}
+.footerLinks{display:flex;gap:24px}
+.legalPage{min-height:100vh;padding:60px 0 100px}
+.legalPage h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,6vw,76px);font-weight:400;letter-spacing:-.04em;margin:70px 0 32px}
+.legalPage h2{font-family:Georgia,"Times New Roman",serif;font-size:25px;font-weight:400;margin:42px 0 14px}
+.legalPage p,.legalPage li{max-width:760px;font-size:15px;line-height:1.7}
+.legalPage .backLink{display:inline-block;border-bottom:1px solid;margin-top:35px;font-size:13px}
 @media(max-width:600px){.heroName{font-size:62px!important}.heroStatement{font-size:26px}.sectionLabel{margin-bottom:28px}.facts{grid-template-columns:1fr}.directContacts{margin-top:35px}.directContacts a{font-size:17px}.footer p{line-height:1.5}}
 
 .has-motion .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
