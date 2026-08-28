@@ -5,9 +5,11 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.service{transition:none}}
 
 /* Stronger desktop navigation */
-.nav nav{font-size:15px;font-weight:600}
-.nav nav a{transition:color .2s ease}
+.nav nav{font-size:16px;font-weight:700}
+.nav nav a{position:relative;transition:color .2s ease}
+.nav nav a::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--coral);transform:scaleX(0);transition:transform .2s ease}
 .nav nav a:hover{color:var(--coral);opacity:1}
+.nav nav a:hover::after{transform:scaleX(1)}
 
 /* Content hierarchy and contact refinements */
 .heroName{font-size:clamp(66px,7.5vw,112px)!important}
