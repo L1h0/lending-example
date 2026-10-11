@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./home.css">
   <link rel="stylesheet" href="./work.css">
+  <link rel="stylesheet" href="./sections.css">
   <script src="./script.js" type="module"></script>
 </head>
 <body id="top">
@@ -59,27 +60,48 @@
 </div></section>
 </div>
 
-  <section class="services shell section" id="solutions">
-    <div class="sectionIntro horizontal"><div><p class="sectionLabel">02 / Форматы работы</p><h2>Решение под<br> <em>задачу бизнеса</em></h2></div><p>Каждая программа адаптируется под цели, контекст и реальные кейсы вашей компании. Стоимость рассчитывается индивидуально после обсуждения запроса.</p></div>
+  <section class="services servicesEditorial shell section" id="solutions" aria-labelledby="solutions-title">
+    <div class="servicesLayout">
+    <div class="sectionIntro servicesIntro">
+      <p class="sectionLabel">02 / Форматы работы</p>
+      <h2 id="solutions-title">Решение под<br> <em>задачу бизнеса</em></h2>
+      <p class="servicesLead">Каждая программа адаптируется под цели, контекст и реальные кейсы вашей компании. Можно работать с отдельной задачей или выбрать комплексную программу.</p>
+      <aside class="formatGuide" aria-labelledby="format-guide-title">
+        <p class="guideLabel">Начинаем с контекста</p>
+        <h3 id="format-guide-title">Что поможет<br> выбрать формат?</h3>
+        <ul><li><b>Задача</b><span>Что важно изменить в работе команды</span></li><li><b>Участники</b><span>Команда, отдел или отдельный руководитель</span></li><li><b>Ориентир</b><span>Какие изменения вы хотите увидеть</span></li></ul>
+        <a class="textLink" href="#pick">Подобрать отправную точку <span aria-hidden="true">↗</span></a>
+        <p class="guidePrice">Стоимость рассчитывается индивидуально после обсуждения запроса.</p>
+      </aside>
+    </div>
     <div class="serviceList"><details class="service" id="service-training"><summary><span class="serviceNumber">01</span><span class="serviceHeading">Игровые бизнес-тренинги<small>Когда нужны конкретные управленческие навыки</small></span><span class="serviceMode">Онлайн / очно</span><span class="expand" aria-hidden="true">+</span></summary><div class="serviceContent"><p>Практические программы по современному менеджменту: делегирование, обратная связь, управление изменениями. Кейсы и задания адаптируются под вашу компанию.</p><div><p class="outputLabel">Фокус работы</p><p>Отработка инструментов и план их применения в ежедневной работе руководителя.</p><button type="button" class="textLink" data-format="Игровые бизнес-тренинги">Обсудить формат</button></div></div></details><details class="service" id="service-games"><summary><span class="serviceNumber">02</span><span class="serviceHeading">Бизнес-игры<small>Когда важно увидеть команду в действии</small></span><span class="serviceMode">Онлайн / очно</span><span class="expand" aria-hidden="true">+</span></summary><div class="serviceContent"><p>Моделируем управленческие ситуации, чтобы безопасно тренировать решения, взаимодействие и лидерство. После игры разбираем опыт и связываем его с рабочими задачами.</p><div><p class="outputLabel">Фокус работы</p><p>Увидеть привычные модели поведения и договориться, что команда будет делать иначе.</p><button type="button" class="textLink" data-format="Бизнес-игры">Обсудить формат</button></div></div></details><details class="service" id="service-strategy"><summary><span class="serviceNumber">03</span><span class="serviceHeading">Стратегические сессии<small>Когда нужны общая цель и план действий</small></span><span class="serviceMode">Онлайн / очно</span><span class="expand" aria-hidden="true">+</span></summary><div class="serviceContent"><p>Совместно работаем над стратегией компании или отдела, планированием года, миссией и ценностями. Делаем обсуждение структурированным и вовлекаем участников.</p><div><p class="outputLabel">Фокус работы</p><p>Согласованные приоритеты, решения, ответственные и следующие шаги.</p><button type="button" class="textLink" data-format="Стратегические сессии">Обсудить формат</button></div></div></details><details class="service" id="service-diagnostics"><summary><span class="serviceNumber">04</span><span class="serviceHeading">Диагностика команды<small>Когда нужно найти причины и точки роста</small></span><span class="serviceMode">Онлайн / очно</span><span class="expand" aria-hidden="true">+</span></summary><div class="serviceContent"><p>Определяем уровень зрелости команды, сильные стороны, управленческие риски и конкретные точки роста. Отделяем симптомы от причин и определяем приоритеты развития.</p><div><p class="outputLabel">Фокус работы</p><p>Понимание текущей ситуации и обоснованный выбор дальнейшего формата работы.</p><button type="button" class="textLink" data-format="Диагностика команды">Обсудить формат</button></div></div></details><details class="service" id="service-coaching"><summary><span class="serviceNumber">05</span><span class="serviceHeading">Коучинг и супервизия<small>Когда руководителю нужен разбор сложной ситуации</small></span><span class="serviceMode">Онлайн / очно</span><span class="expand" aria-hidden="true">+</span></summary><div class="serviceContent"><p>Индивидуально разбираем сложные переговоры, конфликты, изменения и управленческие решения с учётом вашего контекста.</p><div><p class="outputLabel">Фокус работы</p><p>Более осознанные решения и конкретные шаги в рабочей ситуации.</p><button type="button" class="textLink" data-format="Коучинг и супервизия">Обсудить формат</button></div></div></details><details class="service" id="service-brainstorm"><summary><span class="serviceNumber">06</span><span class="serviceHeading">Мозговые штурмы<small>Когда нужны новые идеи и выбор направления</small></span><span class="serviceMode">Онлайн / очно</span><span class="expand" aria-hidden="true">+</span></summary><div class="serviceContent"><p>Ищем идеи для продуктов, рынков и оптимизации процессов. Организуем обсуждение так, чтобы каждый участник мог внести вклад.</p><div><p class="outputLabel">Фокус работы</p><p>Отобранные идеи и план их дальнейшей проверки или реализации.</p><button type="button" class="textLink" data-format="Мозговые штурмы">Обсудить формат</button></div></div></details></div>
+    </div>
   </section>
 
-  <section class="darkSection section" id="approach">
+  <section class="darkSection approachEditorial section" id="approach" aria-labelledby="approach-title">
     <div class="shell">
       <p class="sectionLabel light">03 / Что меняется</p>
-      <div class="darkTitle"><h2>От новых знаний —<br> <em>к новым действиям</em></h2><p>До начала работы согласуем, какие изменения важны для бизнеса и по каким признакам будем оценивать продвижение.</p></div>
-      <div class="resultGrid"><article><span>01</span><h3>Решения</h3><p>Кто принимает решения, как быстро и на основании чего.</p></article><article><span>02</span><h3>Взаимодействие</h3><p>Как отделы договариваются, дают обратную связь и решают конфликты.</p></article><article><span>03</span><h3>Ответственность</h3><p>Как распределяются задачи и выполняются договорённости.</p></article></div><p class="approachNote">Игровой опыт разбираем на реальных кейсах компании и переводим в шаги для ежедневной работы.</p></div>
+      <div class="darkTitle"><h2 id="approach-title">От новых знаний —<br> <em>к новым действиям</em></h2><p>До начала работы согласуем, какие изменения важны для бизнеса и по каким признакам будем оценивать продвижение.</p></div>
+      <div class="resultGrid">
+        <article><div class="resultCardTop"><span class="resultNumber">01</span><svg class="resultGlyph" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M5 11h13v9H5zM22 23h13v9H22zM18 15h10v8M24 19l4 4 4-4"/></svg></div><h3>Решения</h3><p>Кто принимает решения, как быстро и на основании чего.</p><dl class="resultCheckpoint"><dt>Что фиксируем</dt><dd>Общие приоритеты и понятный порядок принятия решений.</dd></dl></article>
+        <article><div class="resultCardTop"><span class="resultNumber">02</span><svg class="resultGlyph" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M5 7h23v16H14l-7 6v-6H5zM28 15h7v16h-5v5l-6-5h-8v-8"/></svg></div><h3>Взаимодействие</h3><p>Как отделы договариваются, дают обратную связь и решают конфликты.</p><dl class="resultCheckpoint"><dt>Что фиксируем</dt><dd>Правила диалога и договорённости о совместной работе.</dd></dl></article>
+        <article><div class="resultCardTop"><span class="resultNumber">03</span><svg class="resultGlyph" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="14"/><path d="m12 20 6 6 11-12"/></svg></div><h3>Ответственность</h3><p>Как распределяются задачи и выполняются договорённости.</p><dl class="resultCheckpoint"><dt>Что фиксируем</dt><dd>Конкретные шаги, ответственных и способ отслеживать выполнение.</dd></dl></article>
+      </div>
+      <div class="practiceBridge"><span class="practiceMark" aria-hidden="true">✳</span><div><h3>Разбор — часть практики</h3><p>Игровой опыт разбираем на реальных кейсах компании: что помогало, что мешало и какие действия стоит перенести в ежедневную работу.</p></div><a class="textLink" href="#process">Как устроена работа <span aria-hidden="true">↗</span></a></div>
+    </div>
   </section>
 
-  <section class="process section">
-    <div class="shell"><p class="sectionLabel">04 / Как я работаю</p><h2>Понятный путь<br> <em>от запроса к практике</em></h2>
-      <div class="steps">
-        <div class="step"><span>01</span><h3>Диагностика</h3><p>Обсуждаем контекст, команду и ситуацию, которую хотите изменить.</p></div>
-        <div class="step"><span>02</span><h3>Цель</h3><p>Формируем желаемую модель управления и критерии результата.</p></div>
-        <div class="step"><span>03</span><h3>Практика</h3><p>Проводим игры, тренинги, сессии и коучинг.</p></div>
-        <div class="step"><span>04</span><h3>Внедрение</h3><p>Переносим инструменты в реальные рабочие процессы.</p></div>
-        <div class="step"><span>05</span><h3>Сопровождение</h3><p>В комплексной программе закрепляем практику и оцениваем изменения.</p></div>
-      </div>
+  <section class="process processEditorial section" id="process" aria-labelledby="process-title">
+    <div class="shell">
+      <div class="processHead"><div><p class="sectionLabel">04 / Как я работаю</p><h2 id="process-title">Понятный путь<br> <em>от запроса к практике</em></h2></div><p>Начинаем с реальной ситуации вашей команды. Глубину работы и набор инструментов определяем под задачу; сопровождение включаем в комплексную программу.</p></div>
+      <ol class="steps processSteps" role="list">
+        <li class="step"><div class="stepTop"><span class="stepNumber" aria-hidden="true">01</span></div><h3>Диагностика</h3><p class="stepCopy">Обсуждаем контекст, команду и ситуацию, которую хотите изменить.</p><p class="stepOutput"><b>На выходе</b>Понятный рабочий запрос</p></li>
+        <li class="step"><div class="stepTop"><span class="stepNumber" aria-hidden="true">02</span></div><h3>Цель</h3><p class="stepCopy">Формируем желаемую модель управления и критерии результата.</p><p class="stepOutput"><b>На выходе</b>Согласованный ориентир</p></li>
+        <li class="step"><div class="stepTop"><span class="stepNumber" aria-hidden="true">03</span></div><h3>Практика</h3><p class="stepCopy">Проводим игры, тренинги, сессии и коучинг под вашу задачу.</p><p class="stepOutput"><b>На выходе</b>Опыт и инструменты для работы</p></li>
+        <li class="step"><div class="stepTop"><span class="stepNumber" aria-hidden="true">04</span></div><h3>Внедрение</h3><p class="stepCopy">Переносим инструменты в реальные рабочие процессы команды.</p><p class="stepOutput"><b>На выходе</b>Конкретные шаги применения</p></li>
+        <li class="step"><div class="stepTop"><span class="stepNumber" aria-hidden="true">05</span></div><h3>Сопровождение</h3><p class="stepCopy">В комплексной программе закрепляем практику и оцениваем изменения.</p><p class="stepOutput"><b>На выходе</b>Разбор прогресса и корректировка</p></li>
+      </ol>
+      <div class="processNext"><div><p class="guideLabel">Первый шаг</p><h3>Начнём с вашей ситуации</h3><p>Опишите задачу, состав команды и то, что хотите изменить. Это поможет выбрать подходящий формат работы.</p></div><a class="button primary" href="#contact">Обсудить задачу <span aria-hidden="true">↗</span></a></div>
     </div>
   </section>
 
