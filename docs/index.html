@@ -11,6 +11,7 @@
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="./work.css">
   <script src="./script.js" type="module"></script>
 </head>
 <body id="top">
@@ -92,9 +93,39 @@
     <div class="aboutCopy"><p class="sectionLabel">Об эксперте</p><h2>Елена<br> <em>Чипсанова</em></h2><p class="role">Бизнес-игропрактик · командный коуч · модератор деловых тренинговых игр и бизнес-сессий · организационный консультант</p><blockquote>«Создаю пространство, в котором руководители видят новые возможности, команды обретают единство, а бизнес получает устойчивое развитие».</blockquote><div class="facts"><span><b>12 лет</b>руководящие позиции в продажах, сервисе и логистике</span><span><b>А1 · Альфа-Банк · А-100 АЗС</b>профессиональный путь</span><span><b>Беларусь · Россия · Казахстан · Узбекистан</b>география проектов</span></div></div>
   </div></section>
 
-  <section class="gallery shell section"><div class="galleryHead"><p class="eyebrow"><i></i> В работе</p><h2>Живая практика.<br> <em>Настоящие команды.</em></h2></div><div class="galleryGrid"><img src="./photos/training.jpg" width="854" height="1280" loading="lazy" alt="Бизнес-тренинг"><img src="./photos/conference.jpg" width="1045" height="1280" loading="lazy" alt="Выступление на конференции"><img src="./photos/stage.jpg" width="888" height="1280" loading="lazy" alt="Работа с аудиторией"></div></section>
+  <section class="gallery workGallery shell section" aria-labelledby="work-title">
+    <div class="galleryHead">
+      <div><p class="sectionLabel">В работе</p><h2 id="work-title">Живая практика.<br> <em>Настоящие команды.</em></h2></div>
+      <div class="workIntro"><p>Работа начинается с того, что происходит в вашей компании: как принимаются решения, распределяется ответственность и взаимодействуют отделы.</p><p>Бизнес-игры, разборы кейсов и обсуждения помогают увидеть привычные модели поведения и связать новый опыт с рабочими задачами.</p></div>
+    </div>
+    <div class="galleryGrid workPhotos">
+      <figure><img src="./photos/training.jpg" width="854" height="1280" loading="lazy" alt="Елена объясняет участникам задание игрового тренинга"><figcaption><p class="workPhotoLabel">Бизнес-игры и тренинги</p><h3>Попробовать в действии</h3><p>Моделируем управленческие ситуации и отрабатываем решения в безопасной игровой среде.</p></figcaption></figure>
+      <figure><img src="./photos/conference.jpg" width="1045" height="1280" loading="lazy" alt="Елена общается с участницей и аудиторией делового мероприятия"><figcaption><p class="workPhotoLabel">Обмен опытом</p><h3>Посмотреть шире</h3><p>Обсуждаем реальные кейсы, разные точки зрения и инструменты, которые можно применить в команде.</p></figcaption></figure>
+      <figure><img src="./photos/stage.jpg" width="888" height="1280" loading="lazy" alt="Елена ведёт обсуждение с аудиторией"><figcaption><p class="workPhotoLabel">Работа с аудиторией</p><h3>Включиться в разговор</h3><p>Вовлекаем участников в обсуждение, чтобы находить решения вместе и слышать друг друга.</p></figcaption></figure>
+    </div>
+    <div class="workTakeaway">
+      <div><p class="workPhotoLabel">Из встречи — в рабочую практику</p><h3>Опыт становится полезным,<br> когда его применяют.</h3><p>После игры разбираем, что произошло, и связываем выводы с задачами бизнеса. В программах с сопровождением возвращаемся к внедрению договорённостей.</p><a class="textLink" href="#contact">Обсудить формат для команды</a></div>
+      <ul><li><b>Увидеть</b><span>Как команда принимает решения и взаимодействует</span></li><li><b>Договориться</b><span>Какие приоритеты и изменения нужны в работе</span></li><li><b>Применить</b><span>Определить следующие шаги и ответственность</span></li></ul>
+    </div>
+  </section>
 
-  <section class="clients shell"><p>Среди клиентов и партнёров</p><div><span>Битрикс24</span><span>А100 Девелопмент</span><span>ООО Астотрейдинг</span><span>ЗАО Банк ВТБ</span><span>ООО ЮрСпектр</span><span>ООО «Техартгрупп»</span><span>ООО «Сантрэйд-сервис»</span><span>ООО «ТД Проплекс»</span><span>ООО «Остервег»</span></div></section>
+  <section class="clients clientsBand" aria-labelledby="clients-title">
+    <div class="clientsHead shell">
+      <div><p class="sectionLabel">Опыт сотрудничества</p><h2 id="clients-title">Среди клиентов<br> и партнёров</h2></div>
+      <div class="clientsControls"><p>Бизнес-игры, обучение и развитие команд для компаний из разных отраслей.</p><button id="ribbon-toggle" class="ribbonToggle" type="button" aria-pressed="false" aria-controls="clients-marquee" hidden>Приостановить ленту</button></div>
+    </div>
+    <div class="clientViewport" id="clients-marquee"><div class="clientTrack"><ul class="clientGroup" aria-label="Компании, с которыми сотрудничала Елена">
+      <li class="clientCard"><img src="./logos/bitrix24.svg" width="252" height="46" alt="Логотип: Битрикс24" decoding="async"><p class="clientName">Битрикс24</p></li>
+      <li class="clientCard"><img src="./logos/a100-development.svg" width="135" height="50" alt="Логотип: А-100 Девелопмент" decoding="async"><p class="clientName">А-100 Девелопмент</p></li>
+      <li class="clientCard"><img src="./logos/a100-azs.svg" width="595" height="134" alt="Логотип: Астотрейдинг · А-100 АЗС" decoding="async"><p class="clientName">Астотрейдинг · А-100 АЗС</p></li>
+      <li class="clientCard"><img src="./logos/vtb.svg" width="92" height="33" alt="Логотип: ЗАО Банк ВТБ" decoding="async"><p class="clientName">ЗАО Банк ВТБ</p></li>
+      <li class="clientCard"><img src="./logos/urspectr.png" width="727" height="324" alt="Логотип: ООО «ЮрСпектр»" decoding="async"><p class="clientName">ООО «ЮрСпектр»</p></li>
+      <li class="clientCard"><img src="./logos/itechart.gif" width="146" height="72" alt="Логотип: Техартгруп · iTechArt" decoding="async"><p class="clientName">Техартгруп · iTechArt</p></li>
+      <li class="clientCard"><img src="./logos/santrade.jpg" width="152" height="128" alt="Логотип: ООО «Сантрэйд-сервис»" decoding="async"><p class="clientName">ООО «Сантрэйд-сервис»</p></li>
+      <li class="clientCard"><img src="./logos/proplex.svg" width="678" height="77" alt="Логотип: ООО «ТД Проплекс»" decoding="async"><p class="clientName">ООО «ТД Проплекс»</p></li>
+      <li class="clientCard"><img src="./logos/osterveg.png" width="510" height="221" alt="Логотип: ООО «Остервег»" decoding="async"><p class="clientName">ООО «Остервег»</p></li>
+    </ul></div></div>
+  </section>
 
   <section class="faq shell section" id="faq"><p class="sectionLabel">Частые вопросы</p><h2>Коротко о <em>важном</em></h2><div class="faqList"><details><summary>Как выбрать подходящий формат?<span aria-hidden="true">+</span></summary><p>Начнём с вводного разговора о вашей задаче, команде и ожиданиях. Можно прийти без готового технического задания — формат и содержание определим вместе.</p></details><details><summary>Сколько это стоит?<span aria-hidden="true">+</span></summary><p>Стоимость рассчитывается индивидуально после обсуждения запроса. На неё влияют задачи, состав команды, формат, длительность и объём сопровождения. Согласуем программу и условия до начала работы.</p></details>
     <details><summary>Какие задачи вы помогаете решить?<span aria-hidden="true">+</span></summary><p>Развитие управленческих компетенций, повышение эффективности командного взаимодействия, подготовка к изменениям, стратегические сессии, развитие лидерства и совершенствование системы управления.</p></details>

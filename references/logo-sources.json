@@ -1,0 +1,77 @@
+{
+  "retrieved_on": "2026-10-11",
+  "logos": [
+    {
+      "file": "bitrix24.svg",
+      "company": "Битрикс24",
+      "source_page": "https://www.bitrix24.ru/about/brandbook.php",
+      "asset_url": "https://www.bitrix24.ru/upload/brandbook/logo.zip",
+      "width": 252,
+      "height": 46
+    },
+    {
+      "file": "a100-development.svg",
+      "company": "А-100 Девелопмент",
+      "source_page": "https://a-100development.by/",
+      "asset_url": "https://a-100development.by/local/templates/main/img/logo/logo-black.svg",
+      "width": 135,
+      "height": 50
+    },
+    {
+      "file": "a100-azs.svg",
+      "company": "Астотрейдинг · А-100 АЗС",
+      "source_page": "https://azs.a-100.by/company/contacts/",
+      "asset_url": "https://azs.a-100.by/local/images/logo_orange_gerbera.svg",
+      "width": 595,
+      "height": 134
+    },
+    {
+      "file": "vtb.svg",
+      "company": "ЗАО Банк ВТБ",
+      "source_page": "https://commons.wikimedia.org/wiki/File:VTB_Logo_2018.svg",
+      "asset_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/VTB_Logo_2018.svg",
+      "width": 92,
+      "height": 33
+    },
+    {
+      "file": "urspectr.png",
+      "company": "ООО «ЮрСпектр»",
+      "source_page": "https://www.urspectr.info/",
+      "asset_url": "https://www.urspectr.info/upload/medialibrary/4dd/urspectr_logotype_ilex_k_.png",
+      "width": 727,
+      "height": 324
+    },
+    {
+      "file": "itechart.gif",
+      "company": "Техартгруп · iTechArt",
+      "source_page": "https://www.park.by/residents/itechart-group/",
+      "asset_url": "https://park.by/upload/iblock/24a/mizdj1icst2qr4gp27x038rm6sp4fnyr.gif",
+      "width": 146,
+      "height": 72
+    },
+    {
+      "file": "santrade.jpg",
+      "company": "ООО «Сантрэйд-сервис»",
+      "source_page": "https://santrade.by/",
+      "asset_url": "https://santrade.by/img/header/logo/logo.jpg",
+      "width": 152,
+      "height": 128
+    },
+    {
+      "file": "proplex.svg",
+      "company": "ООО «ТД Проплекс»",
+      "source_page": "https://www.proplex.ru/",
+      "asset_url": "https://www.proplex.ru/bitrix/templates/proto_template_copy/img/proplex/logo.svg",
+      "width": 678,
+      "height": 77
+    },
+    {
+      "file": "osterveg.png",
+      "company": "ООО «Остервег»",
+      "source_page": "https://osterveg.by/",
+      "asset_url": "https://osterveg.by/local/templates/travelsoft/img/logo_osterveg.png",
+      "width": 510,
+      "height": 221
+    }
+  ]
+}

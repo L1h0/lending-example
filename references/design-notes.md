@@ -43,3 +43,11 @@ A private review edition of https://l1h0.github.io/lending-example/.
 - The top anchor now targets the page top. Section anchors use a consistent 24px inset without retaining space for an invisible header.
 - Removed outer hero rounding and introduced a full-width sage background and a fine boundary for section 01. Section 02 retains the warm paper background with more top spacing.
 - Verification: static HTML/assets/anchors and JavaScript syntax; scroll-controller regression checks for progress, restoration, reflow, menu closure and reduced motion. Browser visual verification remains unavailable.
+
+## Work gallery and client ribbon (2026-10-11)
+
+- Filled the work section with existing service/methodology information, meaningful captions for the original three photos, and a practice-transfer panel. No project-specific outcomes, testimonials or client-photo associations were invented.
+- Replaced client text chips with a seamless, slowly moving ribbon containing all nine company logos and readable names. Files are stored locally; source provenance is in `references/logo-sources.json`.
+- The Astotrading and Techart entries use their verified public brand connections (A-100 AZS and iTechArt). The VTB asset is the public text logo from Wikimedia Commons; other assets are from the companies or the Belarus Hi-Tech Park registry. The original client roster remains the owner's supplied content.
+- The ribbon has an explicit pause/resume button, hover pause, offscreen/background pause and a static complete grid for reduced motion or disabled JavaScript. The duplicate group is hidden from assistive technology and inert.
+- Verification: image files decode, SVGs parse, all local assets/anchors/HTML and JS syntax pass, and scroll/ribbon controller regression checks pass. Browser visual verification remains unavailable.

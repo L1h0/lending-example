@@ -1,4 +1,5 @@
 import {initHeaderScroll} from './header-scroll.js';
+import {initClientRibbon} from './client-ribbon.js';
 
 const menuButton = document.querySelector('.menuToggle');
 const navigation = document.querySelector('#navigation');
@@ -24,6 +25,7 @@ document.addEventListener('click', event => {
 });
 window.matchMedia('(min-width: 1001px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
 initHeaderScroll(closeMenu);
+initClientRibbon();
 
 const recommendations = {
   strategy: {title:'Стратегическая сессия', service:'Стратегические сессии', id:'service-strategy', copy:'Согласовать цель, выбрать приоритеты и перевести обсуждение в план действий с ответственными.', task:'Хотим согласовать общую цель, приоритеты и план действий для команды.'},
