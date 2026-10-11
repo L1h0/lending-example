@@ -74,3 +74,12 @@ A private review edition of https://l1h0.github.io/lending-example/.
 - New explanations derive from the existing services and methodology. No additional credentials, case results, testimonials, fixed prices or guarantees were added.
 - Responsive CSS stacks the service layout and result cards, and changes the process from five columns to a wrapping tablet layout and a numbered mobile sequence. Content may reflow without fixed heights.
 - Verification: static HTML/assets/anchors, JavaScript syntax, existing header/ribbon checks, stylesheet structure and contrast, unchanged hero/picker content, and preservation of service/form bindings. Browser visual and interaction checks could not be repeated because the supported browser capability was unavailable.
+
+## Program, biography and answers continuity (2026-10-11)
+
+- Reused the section 02–04 palette, framed cards, 14px rounding, serif accents and spacing in the flagship program, expert biography and “Коротко о важном”. New rules are scoped to these three components.
+- Kept the program and portrait photos. Added a modest program photo caption, styled the five existing program components as cards, and aligned the contact button with the shared button treatment.
+- Framed the portrait and existing quotation, and placed the unchanged expert facts into cards. No credentials or biographical claims were added.
+- Restyled the existing native FAQ disclosures and added a small contact prompt. Kept every question, answer and the existing FAQ title; did not restore a separate “Частые вопросы” label.
+- Responsive rules reflow the program, biography and FAQ introduction into one column and allow text to wrap. No JavaScript changes or dependencies were needed.
+- Verification: static HTML/assets/anchors, existing JavaScript/controller checks, stylesheet structure, accessible naming references and preserved program/form/FAQ content. Browser visual and interaction verification remains unavailable.
