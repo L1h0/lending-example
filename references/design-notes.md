@@ -51,3 +51,10 @@ A private review edition of https://l1h0.github.io/lending-example/.
 - The Astotrading and Techart entries use their verified public brand connections (A-100 AZS and iTechArt). The VTB asset is the public text logo from Wikimedia Commons; other assets are from the companies or the Belarus Hi-Tech Park registry. The original client roster remains the owner's supplied content.
 - The ribbon has an explicit pause/resume button, hover pause, offscreen/background pause and a static complete grid for reduced motion or disabled JavaScript. The duplicate group is hidden from assistive technology and inert.
 - Verification: image files decode, SVGs parse, all local assets/anchors/HTML and JS syntax pass, and scroll/ribbon controller regression checks pass. Browser visual verification remains unavailable.
+
+## Continuous ribbon and FAQ heading (2026-10-11)
+
+- Removed the ribbon pause button, hover pause, visibility/offscreen observers and all application-controlled stop states. The two equal logo groups now loop continuously; reduced-motion preference uses a slower continuous loop.
+- Retained a complete static client list when JavaScript is disabled and excluded the duplicate group from assistive technology.
+- Removed the extra FAQ label, leaving “Коротко о важном”, and moved the title/list into the correct desktop and mobile grid rows.
+- Verification: static HTML/assets/anchors and JS syntax, plus the updated ribbon and existing header checks. Browser visual verification remains unavailable.
