@@ -10,32 +10,37 @@
   <title>Елена Чипсанова — сильные команды и осознанное управление</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./home.css">
   <script src="./script.js" type="module"></script>
 </head>
 <body>
 <a class="skipLink" href="#main">Перейти к содержимому</a>
   <header class="siteHeader"><div class="nav shell">
-<a class="brand" href="#top" aria-label="Елена Чипсанова — на главную"><span>ЕЧ</span><b>Елена Чипсанова</b></a>
-<nav id="navigation" aria-label="Основная навигация"><a href="#solutions">Форматы работы</a><a href="#approach">Подход</a><a href="#about">Об эксперте</a><a href="#faq">Вопросы</a></nav>
-<a class="button primary navCta" href="#contact">Обсудить задачу</a>
-<button class="menuToggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Открыть меню"><span></span><span></span></button>
+  <a class="brand" href="#top" aria-label="Елена Чипсанова — на главную"><span class="brandMonogram" aria-hidden="true">ЕЧ</span><div class="brandInfo"><b>Елена Чипсанова</b><small>Развитие управленческих команд</small></div></a>
+  <nav id="navigation" aria-label="Основная навигация"><a href="#solutions">Форматы работы</a><a href="#approach">Подход</a><a href="#about">Об эксперте</a><a href="#faq">Вопросы</a></nav>
+  <a class="button primary navCta" href="#contact">Обсудить задачу</a>
+  <button class="menuToggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Открыть меню"><span></span><span></span></button>
 </div></header>
 <main id="main">
 
-  <section class="hero shell" id="top">
-    <div class="heroCopy">
-      <p class="eyebrow"><i></i> Бизнес-игропрактик · командный коуч</p>
-      <h1>Сильные команды<br> не появляются сами.<br> <em>Их создают.</em></h1>
-      <p class="lead">Помогаю собственникам и руководителям договариваться, принимать решения и развивать команду через бизнес-игры, диагностику и работу с реальными задачами.</p>
-      <div class="actions"><a class="button primary" href="#pick">Подобрать формат</a><a class="textLink" href="#solutions">Посмотреть решения</a></div>
-      <p class="heroSignature"><b>Елена Чипсанова</b><span>Беларусь и другие страны · очно и онлайн</span></p><div class="trust"><span><b>12+</b> лет на руководящих позициях</span><span><b>50+</b> игровых тренингов</span><span><b>10+</b> отраслей бизнеса</span></div>
-    </div>
-    <div class="heroVisual">
-      <div class="heroFrame"><img src="./photos/workshop.jpg" width="1280" height="854" fetchpriority="high" alt="Елена Чипсанова проводит бизнес-тренинг"></div>
-      <div class="floatNote"><span>От обсуждения к действию</span><b>Практика, которую<br> можно перенести в работу</b></div>
-      <span class="imageCaption">Управленческие навыки — в действии</span>
-    </div>
-  </section>
+  <div class="heroStage">
+<section class="hero shell" id="top" aria-labelledby="hero-title">
+  <div class="heroCopy">
+    <p class="heroEyebrow">Бизнес-игропрактик <span aria-hidden="true">/</span> командный коуч</p>
+    <h1 id="hero-title">Сильные команды<br> не появляются сами.<em>Их создают.</em></h1>
+    <p class="lead">Помогаю собственникам и руководителям договариваться, принимать решения и развивать команду через практику и реальные задачи бизнеса.</p>
+    <ul class="heroChips" aria-label="Направления работы"><li>Бизнес-игры</li><li>Стратегические сессии</li><li>Командный коучинг</li></ul>
+    <div class="actions"><a class="button primary" href="#pick">Подобрать формат работы</a><a class="textLink" href="#solutions">Посмотреть решения</a></div>
+    <p class="heroFirstStep">Начнём с вашего запроса — подберём формат под команду.</p>
+  </div>
+  <div class="heroVisual">
+    <figure class="heroPhoto"><div class="heroPhotoImage"><img src="./photos/workshop.jpg" width="1280" height="854" fetchpriority="high" alt="Елена Чипсанова работает с участниками бизнес-тренинга"><span class="heroPhotoLabel">От обсуждения к действию</span></div><figcaption><strong>Елена Чипсанова</strong><span>Бизнес-игропрактик · командный коуч</span></figcaption></figure>
+    <figure class="heroSnapshot"><img src="./photos/game.jpg" width="770" height="755" alt="Елена ведёт практическую бизнес-игру" loading="eager"><figcaption>Живая практика</figcaption></figure>
+    <div class="heroPracticeNote"><span aria-hidden="true">✳</span><p>Договорённости,<br>которые становятся действиями</p></div>
+  </div>
+</section>
+<div class="heroProof shell" aria-label="Опыт и форматы работы"><div><b>12<span>+</span></b><p>лет на руководящих<br>позициях</p></div><div><b>50<span>+</span></b><p>игровых<br>тренингов</p></div><div><b>10<span>+</span></b><p>отраслей<br>бизнеса</p></div><div class="heroGeography"><b>Очно и онлайн</b><p>Беларусь и другие страны<br>На русском языке</p></div></div>
+</div>
 
 
 <section class="picker shell section" id="pick" aria-labelledby="pick-title">

@@ -20,7 +20,7 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('.siteHeader')) closeMenu();
 });
-window.matchMedia('(min-width: 801px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+window.matchMedia('(min-width: 1001px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
 
 const recommendations = {
   strategy: {title:'Стратегическая сессия', service:'Стратегические сессии', id:'service-strategy', copy:'Согласовать цель, выбрать приоритеты и перевести обсуждение в план действий с ответственными.', task:'Хотим согласовать общую цель, приоритеты и план действий для команды.'},
