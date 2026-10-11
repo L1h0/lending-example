@@ -58,3 +58,9 @@ A private review edition of https://l1h0.github.io/lending-example/.
 - Retained a complete static client list when JavaScript is disabled and excluded the duplicate group from assistive technology.
 - Removed the extra FAQ label, leaving “Коротко о важном”, and moved the title/list into the correct desktop and mobile grid rows.
 - Verification: static HTML/assets/anchors and JS syntax, plus the updated ribbon and existing header checks. Browser visual verification remains unavailable.
+
+## Unique hero snapshot (2026-10-11)
+
+- Reviewed all seven original photos available in the owner's source repository. Restored the previously unused `public/photos/podcast.jpg` from https://github.com/l1h0/lending-example to the private Site.
+- Replaced the repeated game photo in the hero's “Живая практика” card with this microphone conversation photo. Kept the game photo in the flagship program and adjusted the hero snapshot's vertical focal position for the portrait source.
+- Verification: inspected the original photos, checked the new file's dimensions and unique page use, and ran the existing static and interaction-controller checks. Browser visual verification remains unavailable.

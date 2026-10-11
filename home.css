@@ -41,7 +41,7 @@
 .heroPhoto>figcaption strong{display:block;font:400 1.45rem/1.2 var(--serif);letter-spacing:-.02em}
 .heroPhoto>figcaption span{display:block;font-size:.8125rem;line-height:1.5;color:var(--muted);margin-top:5px}
 .heroSnapshot{position:absolute;left:-15px;bottom:78px;width:156px;height:160px;border:6px solid var(--hero-paper);border-radius:12px;box-shadow:0 12px 30px #08130e66;overflow:hidden;transform:rotate(-6deg)}
-.heroSnapshot img{object-position:50% 52%}
+.heroSnapshot img{object-position:50% 40%}
 .heroSnapshot figcaption{position:absolute;left:0;right:0;bottom:0;padding:21px 8px 8px;background:linear-gradient(transparent,#0b1c13ed);color:white;font-size:.75rem;text-align:center;line-height:1.4}
 .heroPracticeNote{position:absolute;bottom:0;left:55px;right:0;display:flex;align-items:center;gap:14px;color:#d9e7d9}
 .heroPracticeNote>span{font-size:2.25rem;line-height:1.1;color:var(--hero-coral);flex-shrink:0}
