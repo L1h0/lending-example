@@ -1,20 +1,14 @@
 {
   "name": "elena-chipsanova-landing",
-  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": ">=22.13.0"
-  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "npm run build && node scripts/preview.mjs",
+    "check": "npm run build && node --check docs/script.js && node --check docs/header-scroll.js && node --check docs/client-ribbon.js && python3 scripts/check-static.py && node --test scripts/check-header-scroll.mjs scripts/check-client-ribbon.mjs",
+    "build": "node scripts/build-static.mjs"
   },
-  "devDependencies": {
-    "@cloudflare/vite-plugin": "1.37.1",
-    "@openai/sites-vite-plugin": "0.1.0",
-    "vite": "8.0.13",
-    "wrangler": "4.92.0"
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=18"
   }
 }
