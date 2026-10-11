@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm run build && node scripts/preview.mjs",
-    "check": "npm run build && node --check docs/script.js && python3 scripts/check-static.py",
+    "check": "npm run build && node --check docs/script.js && node --check docs/header-scroll.js && python3 scripts/check-static.py && node --test scripts/check-header-scroll.mjs",
     "build": "node scripts/build-static.mjs"
   },
   "version": "1.0.0",

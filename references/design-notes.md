@@ -35,3 +35,11 @@ A private review edition of https://l1h0.github.io/lending-example/.
 - Design research: https://www.estherperel.com/, https://www.marshallgoldsmithleadership.com/ and https://radislavgandapas.com/. Only general composition principles were used; no third-party assets were copied.
 - Current verification: JavaScript syntax, HTML structure, internal anchors, local images and dimensions, and contrast of the new text/button palette passed.
 - Browser visual and interaction checks could not be repeated for this redesign because the supported browser capability was unavailable. The browser results above refer to the initial October 6 version only.
+
+## Scroll and section boundaries (2026-10-11)
+
+- Header movement is proportional to scroll position within the first section; it is fully hidden at section 01 and restored at the page top. Hidden navigation is inert and removed from the accessibility tree. Scrolling closes an open mobile menu.
+- Metrics update after responsive reflow, font readiness, resizing and restored navigation. Scroll updates are batched with requestAnimationFrame. Reduced-motion preference avoids continuous movement.
+- The top anchor now targets the page top. Section anchors use a consistent 24px inset without retaining space for an invisible header.
+- Removed outer hero rounding and introduced a full-width sage background and a fine boundary for section 01. Section 02 retains the warm paper background with more top spacing.
+- Verification: static HTML/assets/anchors and JavaScript syntax; scroll-controller regression checks for progress, restoration, reflow, menu closure and reduced motion. Browser visual verification remains unavailable.
