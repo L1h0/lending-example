@@ -18,6 +18,10 @@ class Page(HTMLParser):
  def handle_endtag(self,tag):
   if not self.stack or self.stack[-1]!=tag:self.errors.append('Unbalanced closing tag: '+tag)
   else:self.stack.pop()
+ def handle_startendtag(self,tag,attributes):
+  self.handle_starttag(tag,attributes)
+  if tag not in ('area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'):
+   self.handle_endtag(tag)
 for file in root.glob('*.html'):
  p=Page();p.feed(file.read_text())
  assert p.h1==1,(file,'expected one H1')

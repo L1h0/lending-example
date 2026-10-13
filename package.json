@@ -4,11 +4,19 @@
   "type": "module",
   "scripts": {
     "dev": "npm run build && node scripts/preview.mjs",
-    "check": "npm run build && node --check docs/script.js && node --check docs/header-scroll.js && node --check docs/client-ribbon.js && python3 scripts/check-static.py && node --test scripts/check-header-scroll.mjs scripts/check-client-ribbon.mjs",
-    "build": "node scripts/build-static.mjs"
+    "check": "npm run build && node scripts/check-javascript.mjs && python3 scripts/check-static.py && node scripts/check-presentation.mjs && node scripts/check-images.mjs && node --test scripts/check-header-scroll.mjs scripts/check-client-ribbon.mjs scripts/check-inquiry.mjs",
+    "build": "node scripts/build-static.mjs",
+    "format": "prettier --write \"*.html\" \"*.css\" \"*.js\" \"modules/*.js\" \"scripts/*.mjs\""
   },
   "version": "1.0.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=24.15.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "jsdom": "30.1.2",
+    "postcss": "8.5.30",
+    "postcss-selector-parser": "7.1.6",
+    "prettier": "3.9.10"
   }
 }
