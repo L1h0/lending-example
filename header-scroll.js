@@ -36,8 +36,8 @@ export function initHeaderScroll(closeMenu) {
     if (!frame) frame = window.requestAnimationFrame(render);
   }
 
-  window.addEventListener('scroll', () => schedule(), {passive: true});
-  window.addEventListener('resize', () => schedule(true), {passive: true});
+  window.addEventListener('scroll', () => schedule(), { passive: true });
+  window.addEventListener('resize', () => schedule(true), { passive: true });
   window.addEventListener('pageshow', () => schedule(true));
   reducedMotion.addEventListener('change', () => schedule());
   if (window.ResizeObserver) {

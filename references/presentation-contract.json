@@ -1,0 +1,35 @@
+{
+  "pages": {
+    "index.html": "c1c5953500bacb88472c3a809c9bfff6dd62093fca2e0bb523b2c7315d79e7bd",
+    "privacy.html": "b6a2fb97c34d8fa0e083e44d685e4dd931252b5ada8c6bbfa6fd9d877c1e4ac1"
+  },
+  "sourceCommit": "88f72bf79bfc7edb31c8534edaa6b7851c138797",
+  "originalAssets": {
+    "photos/conference.jpg": "59a383d0afcd799be9ca246935727cc71f8cd5aa77945a9c2d70403b74947e1b",
+    "photos/game.jpg": "568d13288eee313729cfc4d18a7c59416bf765f11fd22a44e955b7472d81c759",
+    "photos/podcast.jpg": "1713c0cbb0c8528b29ddbb77cc05b87515a7ded3afc48648cb729088bb9d584a",
+    "photos/portrait.jpg": "e5e9bfdbd95c35901ce841e66bb31b00913ae0a75bf3432499b23a56f3f054b7",
+    "photos/stage.jpg": "8af46ac5147b1293e330de58499c99b73cd076f68aefaf0d6793d063626f07b9",
+    "photos/training.jpg": "6b47668202300555ce3a1814dba89f2e1ca6fed6291bffac77215ef802a9f7b0",
+    "photos/workshop.jpg": "3a430daec3ce463c75c80bebb1f4b03dd56e63c7d7402ef4edda7fa61d5db2fe",
+    "logos/a100-azs.svg": "dc678d8959a2e7df9a6267efaad1ceb44e7110548b6e516de00a5061e4b5e73f",
+    "logos/a100-development.svg": "10a8ab358bff47ac90adc7d23d2135a9b78146a5dc8269a33ab625c74a5e42f1",
+    "logos/aftrans.svg": "9673da8fd2ba8ec68d59f2e64ae185cce896abaacc6c0f91b08f05b327a91ca7",
+    "logos/bitrix24.svg": "187060e451f9882076405c4d33cb5d64bfb5774088c41ad7193de740ee0cb83d",
+    "logos/dabracar.svg": "2b378af877a369626a3114e8acac7e275f3f978a3763299d41e4afee25e2d6ae",
+    "logos/highcore.svg": "091446a23fed19340017473b25f44516861a5aff42bc035672e5ecbe1b8db54a",
+    "logos/invitro.png": "4b4862e659022dcee1da5663bbaa7535a970cc02435b73c4089a90c8e37ef310",
+    "logos/itechart.gif": "ae56bfbd88498efe1de7c778fd04b5a7241aa8dbecd5d21b5e12ab17c1864c45",
+    "logos/medical-marketing.jpg": "2ff30233b81fd7d598644ceb949c7758efbfefe3d62316f7f9fd3715918d470c",
+    "logos/osterveg.png": "c9d80bcdc972cbbff04b635a47a8c90ba89ed87b5b47e6273759bb6a53e7b3e7",
+    "logos/peleng.svg": "b6293b1ff8a9ed9b4c8e0897da5f7834304d31068e07af232adb65ffa4b0daca",
+    "logos/proplex.svg": "51ce0939104481ef9e5f25cd7ccb1016697e5d57162b1a972085a0250170c189",
+    "logos/santrade.jpg": "57f6277777c63cafcc336641cb8579e614e56ef0a4e96e667bb61674abbb126a",
+    "logos/urspectr.png": "6b8c3323fbb7db3edfdc123a47717c968f7b7148e5fd1af7695ce6c556a12dca",
+    "logos/vtb.svg": "dd1b7e9a6ce28c7be024f3bf6407983179bd1d7d7bf6bf0ddd53c2dc30afecee"
+  },
+  "styleCascade": {
+    "index.html": "48c446d730e92b18b3b09ed0c8d6a398a273640bbb5f59c6f457da32fa6d65f9",
+    "privacy.html": "299209dd609e4e706aa5f39bfa29078293bc1e4180b300d37caf285926385ffd"
+  }
+}
