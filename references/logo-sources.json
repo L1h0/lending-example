@@ -72,6 +72,66 @@
       "asset_url": "https://osterveg.by/local/templates/travelsoft/img/logo_osterveg.png",
       "width": 510,
       "height": 221
+    },
+    {
+      "file": "highcore.svg",
+      "company": "ХАЙКОР ГЕЙМЗ",
+      "source_page": "https://highcore.io/",
+      "asset_url": "https://highcore.io/assets/images/08838c89a6fc6b4580bb.svg",
+      "width": 46,
+      "height": 35,
+      "retrieved_on": "2026-10-13"
+    },
+    {
+      "file": "dabracar.svg",
+      "company": "ООО «ДабракарГрупп»",
+      "source_page": "https://dabracar.by/",
+      "asset_url": "https://dabracar.by/images/dabracar-logo.svg",
+      "width": 150,
+      "height": 48,
+      "identity_source": "https://dabracar.by/privacy-policy",
+      "retrieved_on": "2026-10-13"
+    },
+    {
+      "file": "peleng.svg",
+      "company": "ОАО «Пеленг»",
+      "source_page": "https://peleng.by/",
+      "asset_url": "https://peleng.by/sites/default/files/content/brand/logo_ru_white.svg",
+      "width": 446,
+      "height": 87,
+      "retrieved_on": "2026-10-13"
+    },
+    {
+      "file": "aftrans.svg",
+      "company": "ООО «АФ ТрансБел»",
+      "source_page": "https://aftrans.com/",
+      "asset_url": "https://static.tildacdn.com/tild3430-3263-4665-b239-616239313339/__.svg",
+      "width": 662,
+      "height": 127,
+      "retrieved_on": "2026-10-13"
+    },
+    {
+      "file": "medical-marketing.jpg",
+      "company": "ООО «Агентство медицинского маркетинга»",
+      "source_page": "https://minsk.cataloxy-by.ru/firms/amm.by.htm",
+      "asset_url": "https://img.cataloxy-by.ru/fl/b0/ab/12174.gif",
+      "width": 46,
+      "height": 40,
+      "identity_source": "https://by.linkedin.com/company/agency-of-medical-marketing",
+      "source_note": "Знак белорусского АММ из открытой карточки компании. Исходный URL оканчивается на .gif, но байты файла имеют формат JPEG. Сайты amm.by и am-market.com из старых карточек сменили владельцев.",
+      "retrieved_on": "2026-10-13"
+    },
+    {
+      "file": "invitro.png",
+      "company": "ИООО «Независимая лаборатория ИНВИТРО»",
+      "source_page": "https://franch-region.ru/franshizy/meditsinskie/invitro/",
+      "asset_url": "https://franch-region.ru/upload/iblock/416/ypqkx5a1o0luhw4fib1ehx9bkecdt4mk.png",
+      "width": 1330,
+      "height": 1000,
+      "identity_source": "https://www.invitro.by/about/news/24695/",
+      "brand_reference": "https://www.invitro.ru/moscow/about/press_relizes/ot-laboratorii-k-klinikam-polnogo-tsikla-invitro-obyavlyaet-o-smene-pozitsionirovaniya-i-restaylinge/",
+      "retrieved_on": "2026-10-13"
     }
-  ]
+  ],
+  "updated_on": "2026-10-13"
 }
