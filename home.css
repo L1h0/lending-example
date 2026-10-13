@@ -78,3 +78,12 @@ html{scroll-padding-top:24px}
 @media(max-width:800px){.services{padding-top:60px}}
 @media(max-width:650px){.services{padding-top:55px}}
 @media print{.siteHeader{transform:none!important;will-change:auto}.pickerBand{background:white;border-color:black}}
+
+/* Правка от 13.10.2026: компактный заголовок без принудительных переносов. */
+.heroStage #hero-title{font-size:clamp(2.25rem,3.5vw,3.15rem);line-height:1.08;text-wrap:balance}
+.heroStage #hero-title em{font-size:1.08em;line-height:1.08;margin-top:6px}
+@media(min-width:651px) and (max-width:1000px){.heroStage #hero-title{font-size:clamp(1.9rem,3.8vw,2.35rem)}}
+@media(max-width:650px){.heroStage #hero-title{font-size:clamp(1.9rem,6.5vw,2.75rem)}}
+/* Кадрирование под новый основной портрет и фото тренинга в миниатюре. */
+.heroStage .heroPhotoImage img{object-position:50% 40%}
+.heroStage .heroSnapshot img{object-position:68% center}
