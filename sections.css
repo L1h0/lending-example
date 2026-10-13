@@ -956,14 +956,9 @@
 .programEditorial .button:hover {
   background: #314337;
 }
-/* Правка: фон «Об эксперте» и цвета карточек повторяют палитру блока 03. */
 .aboutEditorial {
-  background: radial-gradient(ellipse at 90% 12%, #35544166, transparent 55%), var(--hero-bg);
-  color: var(--hero-paper);
-  border-block: 1px solid #617b67;
-}
-.aboutEditorial h2 em {
-  color: var(--hero-coral);
+  background: #e4eadf;
+  border-block: 1px solid #becab7;
 }
 .aboutEditorial .aboutGrid {
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -973,8 +968,8 @@
   height: auto;
   min-width: 0;
   padding: 12px;
-  background: #223a30;
-  border: 1px solid #617b67;
+  background: var(--hero-paper);
+  border: 1px solid #becab7;
   border-radius: 14px 64px 14px 14px;
 }
 .aboutEditorial .aboutPortrait img {
@@ -996,22 +991,20 @@
 }
 .aboutEditorial .sectionLabel {
   margin-bottom: 22px;
-  color: var(--lime);
 }
 .aboutEditorial .role {
   font-size: 0.9375rem;
   line-height: 1.7;
   margin-top: 22px;
-  color: #d0ddcf;
 }
 .aboutEditorial blockquote {
   font-size: 1.3rem;
   line-height: 1.55;
-  background: #223a30;
+  background: var(--hero-paper);
   padding: 22px 25px;
   margin: 25px 0;
-  border: 1px solid #617b67;
-  border-left: 3px solid var(--hero-coral);
+  border: 1px solid #becab7;
+  border-left: 3px solid var(--coral);
   border-radius: 0 14px 14px 0;
 }
 .aboutEditorial .facts {
@@ -1020,10 +1013,9 @@
 }
 .aboutEditorial .facts > span {
   min-width: 0;
-  border: 1px solid #617b67;
+  border: 1px solid #becab7;
   border-radius: 12px;
-  background: #223a30;
-  color: #d0ddcf;
+  background: var(--hero-paper);
   padding: 17px 19px;
   font-size: 0.875rem;
   line-height: 1.6;
@@ -1036,7 +1028,6 @@
   grid-column: auto;
 }
 .aboutEditorial .facts b {
-  color: var(--hero-paper);
   font-size: 0.9375rem;
   line-height: 1.5;
   margin-bottom: 6px;
@@ -1327,13 +1318,6 @@
   }
 }
 @media print {
-  .aboutEditorial h2 em,
-  .aboutEditorial .sectionLabel,
-  .aboutEditorial .role,
-  .aboutEditorial .facts > span,
-  .aboutEditorial .facts b {
-    color: black;
-  }
   .programEditorial,
   .aboutEditorial,
   .faqEditorial {

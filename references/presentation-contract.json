@@ -29,7 +29,7 @@
     "logos/vtb.svg": "dd1b7e9a6ce28c7be024f3bf6407983179bd1d7d7bf6bf0ddd53c2dc30afecee"
   },
   "styleCascade": {
-    "index.html": "becabe3a52100ce584e21d9b33c488fdb5ad88fcade774b88dbdaf15b3141e4e",
+    "index.html": "7086e484bbfb1f10fa2673a0ec136498d5c40fc965564b790e7a8fa7c5235835",
     "privacy.html": "299209dd609e4e706aa5f39bfa29078293bc1e4180b300d37caf285926385ffd"
   },
   "approvedChanges": [
@@ -42,11 +42,6 @@
       "date": "2026-10-13",
       "description": "Линия и коралловый акцент удалены. Фон флагманской программы изменён на #e4eadf, как у блока 01.",
       "sourceCommit": "99fed797d99bac6f885fb67faf6736a24b31bbb5"
-    },
-    {
-      "date": "2026-10-13",
-      "description": "Фон «Об эксперте» повторяет тёмно-зелёный градиент блока 03. Цвета текста, акцентов и карточек адаптированы к этой палитре; размеры и содержимое сохранены.",
-      "sourceCommit": "0b1f4307eb4abe76e119bd9610fd0227411a71ad"
     }
   ]
 }
