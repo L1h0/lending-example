@@ -1,6 +1,6 @@
 {
   "pages": {
-    "index.html": "c1c5953500bacb88472c3a809c9bfff6dd62093fca2e0bb523b2c7315d79e7bd",
+    "index.html": "ebfa0fc53cf0216c0626c8b91b5f816e6e87f01f7a4010246c460d42d5018927",
     "privacy.html": "b6a2fb97c34d8fa0e083e44d685e4dd931252b5ada8c6bbfa6fd9d877c1e4ac1"
   },
   "sourceCommit": "88f72bf79bfc7edb31c8534edaa6b7851c138797",
@@ -29,7 +29,7 @@
     "logos/vtb.svg": "dd1b7e9a6ce28c7be024f3bf6407983179bd1d7d7bf6bf0ddd53c2dc30afecee"
   },
   "styleCascade": {
-    "index.html": "b820a279996c3f72ff0d1e7cb47b7635a95c50472ac4604af01850443c6544d8",
+    "index.html": "7086e484bbfb1f10fa2673a0ec136498d5c40fc965564b790e7a8fa7c5235835",
     "privacy.html": "299209dd609e4e706aa5f39bfa29078293bc1e4180b300d37caf285926385ffd"
   },
   "approvedChanges": [
@@ -37,6 +37,11 @@
       "date": "2026-10-13",
       "description": "Разделитель между «Флагманской программой» и «В работе»: серо-зелёная линия с коралловым акцентом.",
       "sourceCommit": "8ad3c55b5217d9688663a843b725c7bacb75e9e0"
+    },
+    {
+      "date": "2026-10-13",
+      "description": "Линия и коралловый акцент удалены. Фон флагманской программы изменён на #e4eadf, как у блока 01.",
+      "sourceCommit": "99fed797d99bac6f885fb67faf6736a24b31bbb5"
     }
   ]
 }

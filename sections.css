@@ -848,6 +848,15 @@
 }
 
 /* Carry the same framing and spacing into the program, biography and answers. */
+/* Правка от 13.10.2026: фон программы повторяет блок 01 без разделяющей линии. */
+.programBand {
+  background: #e4eadf;
+}
+@media print {
+  .programBand {
+    background: white;
+  }
+}
 .programEditorial,
 .aboutEditorial {
   padding-block: 82px 88px;
