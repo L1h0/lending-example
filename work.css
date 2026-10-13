@@ -56,3 +56,11 @@
 .faq>h2{grid-row:1}
 .faq .faqList{grid-row:1}
 @media(max-width:800px){.faq .faqList{grid-row:2}}
+
+/* Правка от 13.10.2026: «Обмен опытом» показывает верхний кадр исходного коллажа. */
+.workPhotos .workPhotoFrame{height:355px;flex-shrink:0;overflow:hidden}
+.workPhotos figure:nth-child(2) .workPhotoFrame img{height:200%;object-position:58% top}
+@media(max-width:1000px){.workPhotos .workPhotoFrame{height:305px}}
+@media(max-width:800px){.workPhotos .workPhotoFrame{height:265px}}
+@media(max-width:600px){.workPhotos .workPhotoFrame{height:350px}}
+@media(max-width:360px){.workPhotos .workPhotoFrame{height:305px}}
