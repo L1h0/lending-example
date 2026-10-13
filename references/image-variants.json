@@ -1,0 +1,233 @@
+{
+  "conference.jpg": {
+    "width": 1045,
+    "height": 1280,
+    "original_bytes": 156083,
+    "candidates": [
+      {
+        "path": "./photos/responsive/conference-160.jpg",
+        "width": 160,
+        "height": 196,
+        "bytes": 15026,
+        "sha256": "6a31eff2cc1b71057ee35729a398a0eed0e52ce4f5e55df659da0d91c9051bb2"
+      },
+      {
+        "path": "./photos/responsive/conference-320.jpg",
+        "width": 320,
+        "height": 392,
+        "bytes": 41188,
+        "sha256": "6990f43d8e07a95739138453bd6dbae37110284ab16b24e8d1b216bbe75cfba9"
+      },
+      {
+        "path": "./photos/responsive/conference-480.jpg",
+        "width": 480,
+        "height": 588,
+        "bytes": 78174,
+        "sha256": "bbc36264503efd5bf77980732595cb9dbd9fbbb54028854c7bb17381514f1bf4"
+      },
+      {
+        "path": "./photos/responsive/conference-640.jpg",
+        "width": 640,
+        "height": 784,
+        "bytes": 123913,
+        "sha256": "c3d8a704afe44719c98b0eec596b0e256dea7211044196f146ec8c7453ac98c9"
+      }
+    ]
+  },
+  "game.jpg": {
+    "width": 770,
+    "height": 755,
+    "original_bytes": 85741,
+    "candidates": [
+      {
+        "path": "./photos/responsive/game-160.jpg",
+        "width": 160,
+        "height": 157,
+        "bytes": 11639,
+        "sha256": "467f57e73a523baf18f65ff317ac08081570d89f24821c735dc57d6bac093cd2"
+      },
+      {
+        "path": "./photos/responsive/game-320.jpg",
+        "width": 320,
+        "height": 314,
+        "bytes": 33352,
+        "sha256": "6b5241a6cc0c47a372929c5ed8cde1c80e60e51392b30868787f52d8d6855d2e"
+      },
+      {
+        "path": "./photos/responsive/game-480.jpg",
+        "width": 480,
+        "height": 471,
+        "bytes": 64098,
+        "sha256": "0f9e85d575a4fbaa1b50280db4d5473fba1f73703b27d6971dcae28288d5708a"
+      }
+    ]
+  },
+  "podcast.jpg": {
+    "width": 720,
+    "height": 1280,
+    "original_bytes": 90653,
+    "candidates": [
+      {
+        "path": "./photos/responsive/podcast-160.jpg",
+        "width": 160,
+        "height": 284,
+        "bytes": 11546,
+        "sha256": "f69ba3eaf33eecf4c86d5e4d9e1240a36a4c53d03faad8c17d5b20ff57db278b"
+      },
+      {
+        "path": "./photos/responsive/podcast-320.jpg",
+        "width": 320,
+        "height": 569,
+        "bytes": 37030,
+        "sha256": "68c00bba2703be7b6e0e2ada3dbe8f34808ad289302067d4fb7e24895aa1d5b7"
+      },
+      {
+        "path": "./photos/responsive/podcast-480.jpg",
+        "width": 480,
+        "height": 853,
+        "bytes": 76168,
+        "sha256": "222e3ddd75bc6eafa9b4f16146d23a104e159e5daa9ad1616adb6e590a7252e4"
+      }
+    ]
+  },
+  "portrait.jpg": {
+    "width": 1280,
+    "height": 1280,
+    "original_bytes": 210711,
+    "candidates": [
+      {
+        "path": "./photos/responsive/portrait-160.jpg",
+        "width": 160,
+        "height": 160,
+        "bytes": 10144,
+        "sha256": "a42254e26291d3d586619698ce833c5dfda2584bf4e557d36d607a5c4acc68a6"
+      },
+      {
+        "path": "./photos/responsive/portrait-320.jpg",
+        "width": 320,
+        "height": 320,
+        "bytes": 34210,
+        "sha256": "ef23d951c4eb3474b52066c4e1fb5a4ec0e07b3547a3bce9f94fcbe14c746b4d"
+      },
+      {
+        "path": "./photos/responsive/portrait-480.jpg",
+        "width": 480,
+        "height": 480,
+        "bytes": 71925,
+        "sha256": "78b3015847f919b10a3e7a0dd8bda21c64b877493fe4487e35f72da47a6a18b1"
+      },
+      {
+        "path": "./photos/responsive/portrait-640.jpg",
+        "width": 640,
+        "height": 640,
+        "bytes": 119784,
+        "sha256": "981bbf732660178d3084ded86d3710ec114dcdadd024bf4ed8009893d8e05976"
+      },
+      {
+        "path": "./photos/responsive/portrait-768.jpg",
+        "width": 768,
+        "height": 768,
+        "bytes": 159781,
+        "sha256": "55ea820d7f3baefed13c6be7a165e5338b6888b726ff02e22d3c839e3bcf34d3"
+      }
+    ]
+  },
+  "stage.jpg": {
+    "width": 888,
+    "height": 1280,
+    "original_bytes": 106810,
+    "candidates": [
+      {
+        "path": "./photos/responsive/stage-160.jpg",
+        "width": 160,
+        "height": 231,
+        "bytes": 14544,
+        "sha256": "416b460ea89c294fd840d1e8f4b83b9c6c29902f830f57aabe3a366aebcc2893"
+      },
+      {
+        "path": "./photos/responsive/stage-320.jpg",
+        "width": 320,
+        "height": 461,
+        "bytes": 40532,
+        "sha256": "ecc041184d0397b81d75b4e95591b26178022e40757b7eaf1a003178191dcdeb"
+      },
+      {
+        "path": "./photos/responsive/stage-480.jpg",
+        "width": 480,
+        "height": 692,
+        "bytes": 74007,
+        "sha256": "986a85fd87f355197d06e5a7369ceaa0d9efe4d9f922448f007b2df45b065507"
+      }
+    ]
+  },
+  "training.jpg": {
+    "width": 854,
+    "height": 1280,
+    "original_bytes": 113325,
+    "candidates": [
+      {
+        "path": "./photos/responsive/training-160.jpg",
+        "width": 160,
+        "height": 240,
+        "bytes": 14392,
+        "sha256": "2aa6c7ae049ff333379481c5066aae6bbd9e1855226dab10bd7a993760e34971"
+      },
+      {
+        "path": "./photos/responsive/training-320.jpg",
+        "width": 320,
+        "height": 480,
+        "bytes": 40599,
+        "sha256": "68840dbd8610088e65ccd49fc09d4d6ce4981948eba152dcfcfd3ec651a2eb9c"
+      },
+      {
+        "path": "./photos/responsive/training-480.jpg",
+        "width": 480,
+        "height": 719,
+        "bytes": 77158,
+        "sha256": "a2b0767f73081d7be58b697a44d9f7f2b86dc1b2d51972dad9aaa1e35c2347cd"
+      }
+    ]
+  },
+  "workshop.jpg": {
+    "width": 1280,
+    "height": 854,
+    "original_bytes": 101709,
+    "candidates": [
+      {
+        "path": "./photos/responsive/workshop-160.jpg",
+        "width": 160,
+        "height": 107,
+        "bytes": 8329,
+        "sha256": "fa0defa20d41309be84cf7d9e5b43f804b01eac6eddbea84bcb364e37d3bbc73"
+      },
+      {
+        "path": "./photos/responsive/workshop-320.jpg",
+        "width": 320,
+        "height": 214,
+        "bytes": 22050,
+        "sha256": "8e432910d753e7c9810055d05542d88182faa8fc9703aa4d1ff03d980fa1f589"
+      },
+      {
+        "path": "./photos/responsive/workshop-480.jpg",
+        "width": 480,
+        "height": 320,
+        "bytes": 39879,
+        "sha256": "6d7ba51f5df5589d9abb0f313b46473be42890be3cf4ad8def36655a05db95a5"
+      },
+      {
+        "path": "./photos/responsive/workshop-640.jpg",
+        "width": 640,
+        "height": 427,
+        "bytes": 62875,
+        "sha256": "42cc6a0e62020aede3e9cfe5f6c34fa37590639824880ccffebb0f8ba2f451be"
+      },
+      {
+        "path": "./photos/responsive/workshop-768.jpg",
+        "width": 768,
+        "height": 512,
+        "bytes": 81688,
+        "sha256": "8bf2e55c358a49ec76c6ffbdd76fad5a028df9b5e8c7d1dc83da9df30f3f3206"
+      }
+    ]
+  }
+}

@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm run build && node scripts/preview.mjs",
-    "check": "npm run build && node scripts/check-javascript.mjs && python3 scripts/check-static.py && node scripts/check-presentation.mjs && node --test scripts/check-header-scroll.mjs scripts/check-client-ribbon.mjs scripts/check-inquiry.mjs",
+    "check": "npm run build && node scripts/check-javascript.mjs && python3 scripts/check-static.py && node scripts/check-presentation.mjs && node scripts/check-images.mjs && node --test scripts/check-header-scroll.mjs scripts/check-client-ribbon.mjs scripts/check-inquiry.mjs",
     "build": "node scripts/build-static.mjs",
     "format": "prettier --write \"*.html\" \"*.css\" \"*.js\" \"modules/*.js\" \"scripts/*.mjs\""
   },
