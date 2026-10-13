@@ -1,0 +1,35 @@
+name: Landing checks
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: landing-checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - name: Set up Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install development tools
+        run: npm ci --no-audit --no-fund
+      - name: Verify pages, assets, presentation and interactions
+        run: npm run check
+      - name: Check committed build matches source
+        run: |
+          if [ -n "$(git status --porcelain -- docs/)" ]; then
+            git status --short -- docs/
+            exit 1
+          fi
