@@ -29,7 +29,14 @@
     "logos/vtb.svg": "dd1b7e9a6ce28c7be024f3bf6407983179bd1d7d7bf6bf0ddd53c2dc30afecee"
   },
   "styleCascade": {
-    "index.html": "48c446d730e92b18b3b09ed0c8d6a398a273640bbb5f59c6f457da32fa6d65f9",
+    "index.html": "b820a279996c3f72ff0d1e7cb47b7635a95c50472ac4604af01850443c6544d8",
     "privacy.html": "299209dd609e4e706aa5f39bfa29078293bc1e4180b300d37caf285926385ffd"
-  }
+  },
+  "approvedChanges": [
+    {
+      "date": "2026-10-13",
+      "description": "Разделитель между «Флагманской программой» и «В работе»: серо-зелёная линия с коралловым акцентом.",
+      "sourceCommit": "8ad3c55b5217d9688663a843b725c7bacb75e9e0"
+    }
+  ]
 }

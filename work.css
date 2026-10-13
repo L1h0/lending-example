@@ -1,4 +1,18 @@
 /* Working scenes with context, and a calm client ribbon. */
+/* Правка от 13.10.2026: разделитель между программой и живой практикой. */
+.programEditorial + .workGallery {
+  position: relative;
+  border-top: 1px solid #bdc9b7;
+}
+.programEditorial + .workGallery::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: clamp(56px, 7vw, 88px);
+  height: 3px;
+  background: var(--coral);
+}
 .workGallery .galleryHead {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
