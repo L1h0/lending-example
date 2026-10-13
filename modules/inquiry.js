@@ -4,14 +4,26 @@ export function initInquiryForm() {
   const taskInput = document.querySelector('#brief-task');
   const serviceInput = document.querySelector('#brief-service');
   const result = document.querySelector('#brief-result');
+  const error = document.querySelector('#task-error');
+  const preview = document.querySelector('#brief-preview');
+  const copyStatus = document.querySelector('#copy-status');
+  let draftRevision = 0;
+  function invalidateDraft() {
+    draftRevision++;
+    result.hidden = true;
+    copyStatus.textContent = '';
+  }
+  function clearTaskError() {
+    taskInput.removeAttribute('aria-invalid');
+    error.hidden = true;
+  }
   function chooseService(service, task) {
     serviceInput.value = service;
     if (task && !taskInput.value.trim()) {
       taskInput.value = task;
-      taskInput.removeAttribute('aria-invalid');
-      document.querySelector('#task-error').hidden = true;
+      clearTaskError();
     }
-    result.hidden = true;
+    invalidateDraft();
     document.querySelector('#contact').scrollIntoView({
       behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
         ? 'instant'
@@ -20,22 +32,12 @@ export function initInquiryForm() {
     });
     serviceInput.focus({ preventScroll: true });
   }
-  const error = document.querySelector('#task-error');
-  const preview = document.querySelector('#brief-preview');
-  const copyStatus = document.querySelector('#copy-status');
-  taskInput.addEventListener('input', () => {
-    taskInput.removeAttribute('aria-invalid');
-    error.hidden = true;
-  });
-  form.addEventListener('input', () => {
-    result.hidden = true;
-    copyStatus.textContent = '';
-  });
-  form.addEventListener('change', () => {
-    result.hidden = true;
-  });
+  taskInput.addEventListener('input', clearTaskError);
+  form.addEventListener('input', invalidateDraft);
+  form.addEventListener('change', invalidateDraft);
   form.addEventListener('submit', (event) => {
     event.preventDefault();
+    invalidateDraft();
     if (taskInput.value.trim().length < 12) {
       error.textContent =
         'Опишите задачу чуть подробнее: минимум 12 символов, без пробелов по краям.';
@@ -75,12 +77,18 @@ export function initInquiryForm() {
   });
   document.querySelector('#copy-brief').addEventListener('click', async (event) => {
     const button = event.currentTarget;
+    const revision = draftRevision;
+    const text = preview.value;
+    // A clipboard reply belongs to the draft that started it, even if the form changes.
+    const isCurrentDraft = () => revision === draftRevision && !result.hidden;
     button.disabled = true;
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
-      await navigator.clipboard.writeText(preview.value);
+      await navigator.clipboard.writeText(text);
+      if (!isCurrentDraft()) return;
       copyStatus.textContent = 'Текст скопирован. Вставьте его в сообщение Елене и отправьте.';
     } catch {
+      if (!isCurrentDraft()) return;
       preview.focus();
       preview.select();
       copyStatus.textContent =

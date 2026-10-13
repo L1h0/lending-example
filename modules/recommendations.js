@@ -30,15 +30,23 @@ const recommendations = {
 };
 
 export function initRecommendations(chooseService) {
-  let currentRecommendation = recommendations.strategy;
-  document.querySelectorAll('input[name="task-choice"]').forEach((input) =>
-    input.addEventListener('change', () => {
-      currentRecommendation = recommendations[input.value];
-      document.querySelector('#recommend-title').textContent = currentRecommendation.title;
-      document.querySelector('#recommend-copy').textContent = currentRecommendation.copy;
-      document.querySelector('#recommend-link').href = '#' + currentRecommendation.id;
-    }),
-  );
+  const title = document.querySelector('#recommend-title');
+  const copy = document.querySelector('#recommend-copy');
+  const link = document.querySelector('#recommend-link');
+  let currentRecommendation;
+  function syncRecommendation() {
+    const selected = document.querySelector('input[name="task-choice"]:checked');
+    currentRecommendation = recommendations[selected?.value] || recommendations.strategy;
+    title.textContent = currentRecommendation.title;
+    copy.textContent = currentRecommendation.copy;
+    link.href = '#' + currentRecommendation.id;
+  }
+  document
+    .querySelectorAll('input[name="task-choice"]')
+    .forEach((input) => input.addEventListener('change', syncRecommendation));
+  // Browsers may restore form choices before initialization or when returning from history.
+  syncRecommendation();
+  window.addEventListener('pageshow', syncRecommendation);
   document
     .querySelector('#choose-format')
     .addEventListener('click', () =>
@@ -49,7 +57,7 @@ export function initRecommendations(chooseService) {
     .forEach((button) =>
       button.addEventListener('click', () => chooseService(button.dataset.format)),
     );
-  document.querySelector('#recommend-link').addEventListener('click', () => {
+  link.addEventListener('click', () => {
     document.querySelector('#' + currentRecommendation.id).open = true;
   });
 }

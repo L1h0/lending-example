@@ -10,7 +10,7 @@ const base = process.env.LANDING_TEST_ROOT
   : new URL('../docs/', import.meta.url);
 const html = await readFile(new URL('index.html', base), 'utf8');
 
-async function page(t, { clipboard, reducedMotion = false } = {}) {
+async function page(t, { clipboard, reducedMotion = false, restore } = {}) {
   const dom = new JSDOM(html, { url: 'https://example.test/' });
   const { window } = dom;
   window.matchMedia = () => ({ matches: reducedMotion, addEventListener() {} });
@@ -37,6 +37,7 @@ async function page(t, { clipboard, reducedMotion = false } = {}) {
       else delete globalThis[name];
     }
   });
+  restore?.(window.document);
   await import(new URL(`script.js?test=${++instance}`, base));
   const query = (selector) => window.document.querySelector(selector);
   const event = (element, type) => element.dispatchEvent(new window.Event(type, { bubbles: true }));
@@ -143,6 +144,55 @@ test('each task choice updates the recommendation and opens its matching service
     assert.equal(p.query('#' + id).open, true);
   }
 });
+
+test('a restored task choice initializes the matching recommendation', async (t) => {
+  const p = await page(t, {
+    restore(document) {
+      document.querySelector('input[name="task-choice"][value="team"]').checked = true;
+    },
+  });
+  assert.equal(p.query('#recommend-title').textContent, 'Бизнес-игра и командный разбор');
+  p.query('#choose-format').click();
+  assert.equal(p.query('#brief-service').value, 'Бизнес-игры');
+});
+
+test('returning to the page synchronizes a browser-restored task choice', async (t) => {
+  const p = await page(t);
+  p.query('input[name="task-choice"][value="diagnostics"]').checked = true;
+  p.window.dispatchEvent(new p.window.PageTransitionEvent('pageshow', { persisted: true }));
+  assert.equal(p.query('#recommend-title').textContent, 'Диагностика команды');
+  assert.equal(p.query('#recommend-link').getAttribute('href'), '#service-diagnostics');
+  p.query('#choose-format').click();
+  assert.equal(p.query('#brief-service').value, 'Диагностика команды');
+});
+
+for (const outcome of ['success', 'failure']) {
+  test(`a delayed clipboard ${outcome} cannot update or focus a replaced inquiry`, async (t) => {
+    let finish;
+    const p = await page(t, {
+      clipboard: {
+        writeText: () =>
+          new Promise((resolve, reject) => {
+            finish = () => (outcome === 'success' ? resolve() : reject(new Error('Denied')));
+          }),
+      },
+    });
+    p.query('#brief-task').value = 'Согласовать следующий шаг команды.';
+    p.submit();
+    p.query('#copy-brief').click();
+    p.query('#brief-task').value = 'Новый запрос: разобраться в причинах конфликтов.';
+    p.event(p.query('#brief-task'), 'input');
+    p.submit();
+    const name = p.query('#brief-name');
+    name.focus();
+    finish();
+    await new Promise((resolve) => setImmediate(resolve));
+    assert.equal(p.query('#copy-status').textContent, '');
+    assert.equal(p.document.activeElement, name);
+    assert.equal(p.query('#copy-brief').disabled, false);
+    assert.ok(p.query('#brief-preview').value.includes('Новый запрос'));
+  });
+}
 
 test('choosing a recommendation fills an empty task and preserves a task already entered', async (t) => {
   const p = await page(t);
